@@ -9,17 +9,20 @@ body{
     font-family: "Overpass", sans-serif;
     font-optical-sizing: auto;    
     font-style: normal;
+    margin: 5rem;
     background-color: hsl(216, 12%, 8%);
 }
 
 .main-contaniner{
     padding: 2rem;
     margin: auto;
-    margin-top: 10rem;
-    width: 25rem;
-    height: 25rem;
+    /* margin-top: 10rem; */
+    width: 400px;
+    max-width: fit-content;
+    max-height: 25rem;
     border-radius: 1rem;
     background-color: hsl(213, 19%, 18%);
+    /* display: none; */
 }
 .star-image{  
     background-color: hsl(214, 17%, 24%);  
@@ -48,7 +51,7 @@ body{
     background-color: transparent;
     font-weight: 400;
     line-height: 1.3rem;
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 .btn{
@@ -57,7 +60,7 @@ body{
     border-radius: 2rem;
     padding: 0.7rem 8rem;
     border: none;    
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     width: fit-content;
     font-weight: 400;
 }
@@ -82,14 +85,17 @@ body{
 }
 
 .second-container{
-    padding: 2rem;
-    margin: auto;    
-    margin-top: 10rem;
-    width: 25rem;
-    height: 25rem;   
+    padding: 1rem;
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+    /* margin: auto;     */
+    margin-top: 20rem;
+    width: 400px;
+    max-width: fit-content;
+    /* height: 25rem;    */
     border-radius: 1rem;
     background-color: hsl(213, 19%, 18%);
-    
+    /* display: none; */
 }
 .img-container{
      display: flex;
@@ -127,100 +133,133 @@ body{
     color: hsl(217, 12%, 63%);
     font-weight: 400; 
     line-height: 1.5rem;
-    font-size: 15px; 
+    /* font-size: 15px;  */
 }
 
 /* Media Queries */
 
-@media (max-width: 485px) {
-    html {
-        font-size:  90%;
-    }
-}
-
-@media (max-width: 410px) {
-    html {
-        font-size: 70%;
-    }
-
-    .main-container, .second-container {
-        
-    }
-
-    
-}
-
 @media (max-width: 375px) {
-   
-
-    html {
-        font-size: 50%;
+    body {
+        margin: 2rem;
+        background-color: hsl(216, 12%, 8%);
     }
-
-    .home-content h3 {
-        /* font-size: 2.6rem; */
-    }
-
-    .home-content h1 {
-        /* font-size: 5rem; */
-    }
-
-    .home-img img {
-        /* width: 70vw;
-        margin-top: 4rem; */
-    }
-
-    .about {
-        /* flex-direction: column-reverse; */
-    }
-
-    .about img {
-        /* width: 70vw;
-        margin-top: 4rem; */
-    }
-
-    .services h2 {
-        /* margin-bottom: 3rem; */
-    }
-
-    .portfolio {
-        /* margin-bottom: 3rem; */
-    }
-
-    .portfolio-container {
-        /* grid-template-columns: repeat(2, 1fr); */
-    }
-}
-
-@media (max-width: 617px) {
-    /* .portfolio-container {
-        grid-template-columns: 1fr;
-    } */
-}
-
-@media (max-width: 450px) {
-    /* html {
-        font-size: 50%;
-    }
-    .contact form  .input-box input {
+    .main-contaniner{
+        padding: 1rem;
+        /* margin: auto; */
+        margin-top: 7rem;
         width: 100%;
-    } */
-}
-
-@media (max-width: 365px) {
-    /* .home-img img {
-        width: 90vw;
+        /* height: 25rem; */
+        border-radius: 1rem;
+        background-color: hsl(213, 19%, 18%);
     }
-
-    .about-img img {
-        width: 90vw;
+    .star-image{  
+        background-color: hsl(214, 17%, 24%);  
+        padding: 1rem;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        /* border: none; */
     }
-    .footer {
-        flex-direction: column-reverse;
+    
+    
+    .howdidewdo{
+        margin-top: 2rem;
+        background-color: transparent;
+        color: hsl(0, 0%, 100%);
     }
-
-    .footer p {
+    
+    .howdidewdo h1{
+        background-color: transparent;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    
+    .howdidewdo p{
+        color: hsl(217, 12%, 63%);
+        background-color: transparent;
+        font-weight: 400;
+        line-height: 1.3rem;
+        /* font-size: 15px; */
+    }
+    
+    .btn{
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 2rem;
+        padding: 0.7rem 7rem;
+        border: none;    
+        /* font-size: 1.1rem; */
+        width: fit-content;
+        font-weight: 400;
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        margin: 1.5rem 0  1.5rem 0;
+    }
+    
+    .btns .bttns{
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        color: hsl(217, 12%, 63%);
+        background-color: hsl(214, 17%, 24%); 
+        border-radius: 50%;
+        border: none;
+        font-weight: 700;
+    
+    }
+    
+    .second-container{
+        padding: 2rem;
+        margin: auto;    
+        margin-top: 10rem;
+        width: 25rem;
+        height: 25rem;   
+        border-radius: 1rem;
+        background-color: hsl(213, 19%, 18%);
+        /* display: none; */
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    .img-container{
+         display: flex;
+         justify-content: center;
+    
+    }
+    .img-container img{    
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .content h3{
+        width: fit-content;
+        padding: 0.3rem 1.5rem;
+        border-radius: 1rem;
+        font-weight: 400;
+        margin: auto;
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(214, 17%, 24%);
+    }
+    
+    .content h1{
         text-align: center;
-        margin-top: 2rem; */
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-weight: 700;    
+    }
+    
+    .content p{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: hsl(217, 12%, 63%);
+        font-weight: 400; 
+        line-height: 1.5rem;
+        /* font-size: 15px;  */
     }
 }
